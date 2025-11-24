@@ -19,6 +19,12 @@
         transition: 0.5s ease;
         transform: scale(1.03);
     }
+    @media (max-width:500px) {
+        .query{
+            display: flex;
+            flex-direction: column;
+        }
+    }
 </style>
 
 <body
@@ -582,7 +588,7 @@
     </div>
     <div class="container-fluid bg-black text-white mt-5 border border-2" style="border-radius: 20px 20px 0px 0px;">
         <div class="container mt-4">
-            <div class="footer-list d-flex gap-5">
+            <div class="footer-list d-flex gap-5 query">
                 <div class="logo-content d-flex">
                     <img src="./Images/MuscleMatrix.com.png" style="height: 50px; width: 50px;" alt="">
                     <h2 class="text-white display-6 fw-bolder">MuscleMatrix</h2>
