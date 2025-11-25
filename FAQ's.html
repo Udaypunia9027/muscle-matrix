@@ -19,6 +19,21 @@
         transform: scale(1.03);
     }
 
+    .card-hover1:hover {
+        cursor: pointer;
+        background-color: blue !important;
+        border: 5px solid gold !important;
+        transition: 0.5s ease;
+        transform: scale(1.3);
+    }
+    .card-hover2:hover {
+        cursor: pointer;
+        background-color: darkcyan !important;
+        border: 5px solid gold !important;
+        transition: 0.5s ease;
+        transform: scale(1.1);
+    }
+
     ul li a {
         text-decoration-line: none;
         color: white;
@@ -73,103 +88,364 @@
                 </div>
             </div>
         </nav>
-        <div class="container bg-dark text-white text-center border border-1 rounded-5 mt-5">
-            <h1 class="display-3 fw-bolder">FAQ (Frequently Asked Questions) ⁉️</h1>
+    </div>
+    <div class="container bg-dark text-white text-center border border-1 rounded-5 mt-5">
+        <h1 class="display-3 fw-bolder">FAQ (Frequently Asked Questions) ⁉️</h1>
+    </div>
+    <section class="hero-section text-center text-white position-relative my-5">
+        <video autoplay loop muted id="hero-video" class="w-100 border border-1 rounded-5">
+            <source src="./Images/FAQ's.mp4" type="video/mp4">
+        </video>
+        <div
+            class="hero-content position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center">
+            <p class="text-white lead fs-4 fw-bolder">Find answers to the most common questions about our gym,
+                memberships, and training programs</p>
+            <button class="btn btn bg-primary border border-2 border-white  rounded-5 card-hover1"><i
+                    class="fa-solid fa-arrow-down text-white"></i><a href="#FAQ" class="text-white fs-4"
+                    style="text-decoration-line:none;"> Browser more Questions</a> </button>
         </div>
-        <section class="hero-section text-center text-white position-relative my-5">
-            <video autoplay loop muted id="hero-video" class="w-100 border border-1 rounded-5">
-                <source src="./Images/FAQ's.mp4" type="video/mp4">
-            </video>
-            <div
-                class="hero-content position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center">
-                <p class="text-white lead fs-4 fw-bolder">Find answers to the most common questions about our gym,
-                    memberships, and training programs</p>
-                <button class="btn btn bg-primary border border-2 border-white text-white fs-4 rounded-5"><i
-                        class="fa-solid fa-arrow-down"></i> Browser more Questions</button>
-            </div>
-        </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <div class="container-fluid bg-black text-white mt-5 border border-2" style="border-radius: 20px 20px 0px 0px;">
-            <div class="container mt-4 ">
-                <div class="footer-list d-flex gap-5 query">
-                    <div class="logo-content d-flex">
-                        <img src="./Images/MuscleMatrix.com.png" style="height: 50px; width: 50px;" alt="">
-                        <h2 class="text-white display-6 fw-bolder">MuscleMatrix</h2>
-                    </div>
-                    <div class="footer-list1">
-                        About
-                        <ul>
-                            <li><a href="./About.html">About Us</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="">Gallery</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-list2">
-                        Support
-                        <ul>
-                            <li><a href="#">Contact Us</a></li>
-                            <li><a href="#">Whatsapp</a></li>
-                            <li><a href="">Telegram</a></li>
-
-                        </ul>
-                    </div>
-                    <div class="footer-list3">
-                        FAQ
-                        <ul>
-                            <li><a href="Account">Account</a></li>
-                            <li><a href="">Booking</a></li>
-                            <li><a href="">Payments</a></li>
-                            <li><a href="">Returns</a></li>
-                            <li><a href="">Private Policy</a></li>
-                            <li><a href="">Terms & Condition</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-search">
-                        <h2>Newsletter</h2>
-                        <p>“Don’t miss out your fitness journey”</p>
-                        <div class="footer-email">
-                            <input type="text" placeholder="Enter Email">
-                            <button class="btn btn-outline-danger">Submit</button>
+    </section>
+    <!-- Questions related to  Facility & Equipment -->
+    <section id="FAQ">
+        <div class="container text-white bg-dark mb-3 border border-warning py-2 rounded-5">
+            <h1 class="fw-bolder"><i class="fa-solid fa-dumbbell text-warning"></i> Facility & Equipment</h1>
+        </div>
+        <div class="container ">
+            <!-- accordion-1 -->
+            <div class="accordion text-white" id="accordionFacility">
+                <div class="accordion-item bg-dark text-white">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-black text-white" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseOne1a" aria-expanded="false"
+                            aria-controls="collapseOne1a">
+                            What are your operating hours?
+                        </button>
+                    </h2>
+                    <div id="collapseOne1a" class="accordion-collapse collapse" data-bs-parent="#accordionFacility">
+                        <div class="accordion-body">
+                            <strong>Our standard operating hours are:</strong>
+                            <ul>
+                                <li>Monday - Friday: 5:00 AM - 11:00 PM</li>
+                                <li>Saturday: 6:00 AM - 9:00 PM</li>
+                                <li>Sunday: 7:00 AM - 8:00 PM</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-
+                <!-- accordion-2 -->
+                <div class="accordion-item bg-dark text-white">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button bg-black text-white" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                            What equipment and facilities do you have?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse " data-bs-parent="#accordionFacility">
+                        <div class="accordion-body">
+                            <strong>Our facility includes:</strong>
+                            <ul>
+                                <li>Cardio zone with treadmills, ellipticals, and bikes</li>
+                                <li>Extensive free weights area</li>
+                                <li>Strength training machines</li>
+                                <li>Functional training area with TRX, kettlebells, and battle ropes</li>
+                                <li>Group exercise studio</li>
+                                <li>Locker rooms with showers and sauna</li>
+                                <li>Sports nutrition bar</li>
+                                <li>Basketball court</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- accordion-3 -->
+                <div class="accordion-item bg-dark text-white">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-black text-white" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseThree3" aria-expanded="false"
+                            aria-controls="collapseThree3">
+                            Do you have personal trainers available?
+                        </button>
+                    </h2>
+                    <div id="collapseThree3" class="accordion-collapse collapse" data-bs-parent="#accordionFacility">
+                        <div class="accordion-body">
+                            <strong>Yes, we have certified personal trainers available for one-on-one sessions. All
+                                our trainers are:</strong>
+                            <ul>
+                                <li>Nationally certified</li>
+                                <li>CPR/AED trained</li>
+                                <li>Specialized in various training methodologies</li>
+                            </ul>
+                            <p>Your first session includes a comprehensive fitness assessment and goal setting.
+                                Package options are available at discounted rates for members</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <p class="lead text-center mt-5 fw-bolder"> © 2025 MuscleMatrix. All Rights Reserved.</p>
         </div>
-        </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-            crossorigin="anonymous"></script>
+    </section>
+
+    <!-- Questions Related to the pricing and all  -->
+
+    <section id="FAQ">
+        <div class="container text-white bg-dark my-4 border border-warning py-2 rounded-5 ">
+            <h1 class="fw-bolder"><i class="fa-solid fa-id-card text-warning"></i> Membership and pricing</h1>
+        </div>
+        <div class="container">
+            <!-- accordion-1 -->
+            <div class="accordion text-white" id="accordionMembership">
+                <div class="accordion-item bg-dark text-white">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-black text-white" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
+                            aria-controls="collapseOne">
+                            What Membership options do you have offer?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionMembership">
+                        <div class="accordion-body">
+                            <strong>We offer several membership tiers to fit your needs:</strong>
+                            <ul>
+                                <li><strong>Basic:</strong> Gym access during standard hours</li>
+                                <li><strong>Premium:</strong>24/7 access + group classes</li>
+                                <li><strong>Elite:</strong> All Premium benefits + personal training sessions</li>
+                                <li><strong>Student/Senior:</strong>Discounted rates with valid ID</li>
+                            </ul>
+                            <p>All memberships include a free fitness assessment and orientation.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- accordion-2 -->
+                <div class="accordion-item bg-dark text-white">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button bg-black text-white" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo2" aria-expanded="true" aria-controls="collapseTwo2">
+                            Can I freeze my Membership?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo2" class="accordion-collapse collapse " data-bs-parent="#accordionMembership">
+                        <div class="accordion-body">
+                            <p><strong>Yes,</strong>you can freeze your membership for up to 3 months per year for
+                                medical reasons, travel, or other personal circumstances. A small monthly
+                                maintenance fee applies during the freeze period. Please contact our front desk at
+                                least one week before your next billing cycle to arrange a freeze.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- accordion-3 -->
+                <div class="accordion-item bg-dark text-white">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-black text-white" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseThree3a" aria-expanded="false"
+                            aria-controls="collapseThree3a">
+                            Do you offer family or corporate discounts?
+                        </button>
+                    </h2>
+                    <div id="collapseThree3a" class="accordion-collapse collapse" data-bs-parent="#accordionMembership">
+                        <div class="accordion-body">
+                            <strong>Absolutely! We offer:</strong>
+                            <ul>
+                                <li><strong>Family Plans:</strong> 15% discount for additional family members</li>
+                                <li><strong>Corporate Memberships:</strong> Special rates for companies with 5+
+                                    employees</li>
+                                <li><strong>Referral Program:</strong> Get one month free for every friend who join
+                                </li>
+                            </ul>
+                            <p>Contact our membership team for details and eligibility requirements.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Questions related to training and classes -->
+
+    <section id="FAQ">
+        <div class="container text-white bg-dark my-4 border border-warning py-2 rounded-5">
+            <h1 class="fw-bolder"><i class="text-warning">💪</i> Training and Classes</h1>
+        </div>
+        <div class="container">
+            <!-- accordion-1 -->
+            <div class="accordion text-white" id="accordionTraining">
+                <div class="accordion-item bg-dark text-white">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-black text-white" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseOne1" aria-expanded="false"
+                            aria-controls="collapseOne1">
+                            What types of group classes do you offer?
+                        </button>
+                    </h2>
+                    <div id="collapseOne1" class="accordion-collapse collapse" data-bs-parent="#accordionTraining">
+                        <div class="accordion-body">
+                            <strong>We offer a wide variety of group fitness classes for all levels:</strong>
+                            <ul>
+                                <li><strong>HIIT (High-Intensity Interval Training)</strong></li>
+                                <li><strong>Yoga</strong> (Vinyasa, Hatha, and Restorative)</li>
+                                <li><strong>Spin/Cycling</strong></li>
+                                <li><strong>Pilates</strong></li>
+                                <li><strong>Zumba</strong></li>
+                                <li><strong>Bootcamp</strong></li>
+                                <li><strong>Strength Training</strong></li>
+                                <li><strong>Boxing & MMA</strong></li>
+                            </ul>
+                            <p>Class schedules are updated monthly and available on our app and website.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- accordion-2 -->
+                <div class="accordion-item bg-dark text-white">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button bg-black text-white" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo2a" aria-expanded="true" aria-controls="collapseTwo2a">
+                            Do i need to sing up for classes in advance?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo2a" class="accordion-collapse collapse " data-bs-parent="#accordionTraining">
+                        <div class="accordion-body">
+                            <strong>Yes, we recommend signing up for classes in advance through our mobile app or
+                                member portal. This ensures your spot in popular classes and helps our instructors
+                                prepare. You can book up to 7 days in advance. If you can't attend, please cancel at
+                                least 2 hours before class to avoid a no-show fee.</strong>
+                        </div>
+                    </div>
+                </div>
+                <!-- accordion-3 -->
+                <div class="accordion-item bg-dark text-white">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-black text-white" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                            aria-controls="collapseThree">
+                            I'm new to exercise? Where should I start?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionTraining">
+                        <div class="accordion-body">
+                            <strong>Welcome! We're excited to help you start your fitness journey. We
+                                recommend:</strong>
+                            <ol>
+                                <li><strong>Free Fitness Assessment:</strong> Schedule a complimentary session with
+                                    one of our trainers</li>
+                                <li><strong>Orientation:</strong> Learn how to use equipment safely and effectively
+                                </li>
+                                <li><strong>Beginner Classes:</strong> Try our "Foundations" or "Intro to Fitness"
+                                    classes</li>
+                                <li><strong>Personal Training:</strong> Consider a few sessions to build confidence
+                                </li>
+                            </ol>
+                            <p>Remember, everyone starts somewhere - our community is supportive and non-judgmental!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section>
+        <div class="container-fluid bg-black text-white my-5">
+            <div class="container-content text-center">
+                <h1 class="display-4 fw-bolder py-4">Still Have Questions?</h1>
+                <p class="lead py-4">Our team is here to help you with any additional questions</p>
+            </div>
+           <div class="container my-4">
+    <div class="row justify-content-center">
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card text-center bg-dark text-white border border-warning rounded-5 h-100 card-hover2">
+                <div class="card-body">
+                    <h5 class="card-title display-2">📞</h5>
+                    <h6 class="card-subtitle mb-2">Call Us</h6>
+                    <p class="card-text">(555) 123-4567</p>
+                    <p><strong>Mon-Fri: 8am-8pm</strong></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card text-center bg-dark text-white border border-warning rounded-5 h-100 card-hover2">
+                <div class="card-body">
+                    <h5 class="card-title display-2">📩</h5>
+                    <h6 class="card-subtitle mb-2">Email Us</h6>
+                    <p class="card-text">info@musclematrix.com</p>
+                    <p><strong>Response within 24 hours</strong></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card text-center bg-dark text-white border border-warning rounded-5 h-100 card-hover2">
+                <div class="card-body">
+                    <h5 class="card-title display-2">🗨️</h5>
+                    <h6 class="card-subtitle mb-2">Live Chat</h6>
+                    <p class="card-text">Available on website</p>
+                    <p><strong>Mon-Sat: 9am-6pm</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container-fluid bg-black text-white mt-5 border border-2" style="border-radius: 20px 20px 0px 0px;">
+        <div class="container mt-4 ">
+            <div class="footer-list d-flex gap-5 query">
+                <div class="logo-content d-flex">
+                    <img src="./Images/MuscleMatrix.com.png" style="height: 50px; width: 50px;" alt="">
+                    <h2 class="text-white display-6 fw-bolder">MuscleMatrix</h2>
+                </div>
+                <div class="footer-list1">
+                    About
+                    <ul>
+                        <li><a href="./About.html">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-list2">
+                    Support
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Whatsapp</a></li>
+                        <li><a href="">Telegram</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-list3">
+                    FAQ
+                    <ul>
+                        <li><a href="Account">Account</a></li>
+                        <li><a href="">Booking</a></li>
+                        <li><a href="">Payments</a></li>
+                        <li><a href="">Returns</a></li>
+                        <li><a href="">Private Policy</a></li>
+                        <li><a href="">Terms & Condition</a></li>
+                    </ul>
+                </div>
+                <div class="footer-search">
+                    <h2>Newsletter</h2>
+                    <p>“Don’t miss out your fitness journey”</p>
+                    <div class="footer-email">
+                        <input type="text" placeholder="Enter Email">
+                        <button class="btn btn-outline-danger">Submit</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <p class="lead text-center mt-5 fw-bolder"> © 2025 MuscleMatrix. All Rights Reserved.</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
