@@ -7,6 +7,15 @@
     <title>Services</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   </head>
+  <style>
+    .card-hover:hover{
+                background-color: black !important;
+        border-color: yellow !important;
+        transition: 0.3s ease;
+        cursor: pointer;
+        transform: scale(1.03);
+    }
+  </style>
   <body style="background-image: linear-gradient(135deg, rgba(107, 107, 107,0.06) 0%, rgba(107, 107, 107,0.06) 50%,rgba(202, 202, 202,0.06) 50%, rgba(202, 202, 202,0.06) 100%),linear-gradient(90deg, rgb(20,20,20),rgb(20,20,20)); background-size: 30px 30px;">
   <div class="container">
         <nav class="navbar navbar-expand-lg rounded-5 my-4 card-hover"
@@ -51,7 +60,7 @@
     
     <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
         <!-- Service 1 -->
-        <div class="col">
+        <div class="col card-hover">
             <div class="card bg-black text-white border-2 border-warning card-hover h-100">
                 <div class="card-body text-center p-4">
                     <div class="display-1 mb-3">🏋️‍♂️</div>
@@ -63,7 +72,7 @@
         </div>
 
         <!-- Service 2 -->
-        <div class="col">
+        <div class="col card-hover">
             <div class="card bg-black text-white border-2 border-danger card-hover h-100">
                 <div class="card-body text-center p-4">
                     <div class="display-1 mb-3">👥</div>
@@ -75,7 +84,7 @@
         </div>
 
         <!-- Service 3 -->
-        <div class="col">
+        <div class="col card-hover">
             <div class="card bg-black text-white border-2 border-success card-hover h-100">
                 <div class="card-body text-center p-4">
                     <div class="display-1 mb-3">📊</div>
@@ -87,7 +96,7 @@
         </div>
 
         <!-- Service 4 -->
-        <div class="col">
+        <div class="col card-hover">
             <div class="card bg-black text-white border-2 border-primary card-hover h-100">
                 <div class="card-body text-center p-4">
                     <div class="display-1 mb-3">🍎</div>
@@ -99,7 +108,7 @@
         </div>
 
         <!-- Service 5 -->
-        <div class="col">
+        <div class="col card-hover">
             <div class="card bg-black text-white border-2 border-info card-hover h-100">
                 <div class="card-body text-center p-4">
                     <div class="display-1 mb-3">💆‍♂️</div>
@@ -111,7 +120,7 @@
         </div>
 
         <!-- Service 6 -->
-        <div class="col">
+        <div class="col card-hover">
             <div class="card bg-black text-white border-2 border-warning card-hover h-100">
                 <div class="card-body text-center p-4">
                     <div class="display-1 mb-3">🎯</div>
